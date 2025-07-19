@@ -1,18 +1,45 @@
 # Projeto de Modelagem Conceitual de E-commerce
 
-A proposta do projeto foi desenvolver um modelo conceitual para um sistema de e-commerce, contendo os principais elementos de clientes, pedidos, pagamentos e entregas.
+Este projeto faz parte do desafio proposto pela **DIO**, no qual foi solicitado o desenvolvimento de um **modelo conceitual de banco de dados** para um sistema de E-commerce, utilizando o modelo Entidade-Relacionamento (ER). A proposta foca em representar os principais elementos envolvidos em um processo de compra online, com base em requisitos previamente definidos.
 
-## Descrição do Modelo
+---
 
-- O cliente pode ser **Pessoa Física** ou **Pessoa Jurídica**, mas não ambos ao mesmo tempo.
-- Um cliente pode ter **várias formas de pagamento** cadastradas.
-- Cada **pedido** é associado a um cliente e uma forma de pagamento.
-- Cada pedido gera uma **entrega**, que possui status e código de rastreamento.
+## Objetivo
 
-## Ferramenta Utilizada
+Construir um esquema conceitual capaz de representar:
 
-- [draw.io (diagrams.net)](https://draw.io) para a criação do diagrama.
+- A estrutura de **clientes (PF e PJ)**
+- As possíveis **formas de pagamento**
+- Os **pedidos realizados**
+- As **entregas associadas aos pedidos**
 
-## Diagrama Conceitual
+---
 
-![Diagrama Conceitual](caminho/para/o/seu/diagrama.png)
+## Descrição Geral do Modelo
+
+O modelo foi elaborado com base nos seguintes requisitos:
+
+1. **Cliente** pode ser:
+   - **Pessoa Física**, com CPF, nome e data de nascimento;
+   - **Pessoa Jurídica**, com CNPJ, razão social e nome fantasia;
+   - Um cliente pode ser **apenas PF ou PJ**, nunca os dois.
+
+2. **Forma de Pagamento**:
+   - O cliente pode ter **mais de uma forma de pagamento** cadastrada;
+   - Relacionamento muitos-para-muitos modelado através da tabela associativa `Forma Pagamento`.
+
+3. **Pedido**:
+   - Cada pedido é vinculado a um **cliente** e a uma **forma de pagamento**;
+   - Contém informações como data e valor total.
+
+4. **Entrega**:
+   - Cada pedido possui uma entrega;
+   - A entrega possui **status** e **código de rastreio**.
+
+---
+
+## 📈 Diagrama Conceitual
+
+> Diagrama desenvolvido no [draw.io](https://draw.io)
+
+![Diagrama Conceitual](./Diagrama.png)
