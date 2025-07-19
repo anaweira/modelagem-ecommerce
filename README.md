@@ -42,4 +42,4 @@ O modelo foi elaborado com base nos seguintes requisitos:
 
 > Diagrama desenvolvido no [draw.io](https://draw.io)
 
-![Diagrama Conceitual](./Diagrama.png)
+<img src="./Diagrama.png" alt="Diagrama Conceitual" width="100%">
