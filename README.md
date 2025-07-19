@@ -41,3 +41,5 @@ O modelo foi elaborado com base nos seguintes requisitos:
 ## 📈 Diagrama Conceitual
 
 > Diagrama desenvolvido no [draw.io](https://draw.io)
+
+![Diagrama Conceitual](./Diagrama.png)
